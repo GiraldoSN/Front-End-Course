@@ -1,0 +1,50 @@
+Ada dua hal yang dilakukan untuk menambahkan atribut pada elemen HTML, yaitu nama atribut dan nilainya. Ada banyak atribut yang disediakan oleh HTML. Salah satu yang terlihat sebelumnya adalah class dan src. Terkait nilainya, Anda dapat menulisnya dengan membungkus dengan tanda kutip satu atau dua setelah karakter sama dengan (=).
+
+Berikut adalah beberapa atribut yang tersedia di HTML:
+
+* accesskey
+Menentukan tombol shortcut untuk mengaktifkan/memfokuskan pada sebuah element.
+
+* class
+Menentukan satu atau lebih classname untuk sebuah elemen.
+
+* contenteditable
+Menentukan konten dari elemen merupakan konten yang dapat diubah atau tidak.
+
+* data-*
+Menyimpan sebuah data pribadi khusus ke halaman atau aplikasi.
+
+* dir
+Menentukan arah teks untuk konten pada suatu elemen.
+
+* draggable
+Menentukan suatu elemen dapat di-drag atau tidak.
+
+* dropzone
+Menentukan data yang di-drag adalah data yang disalin, dipindahkan, atau ditautkan saat dijatuhkan.
+
+* hidden
+Menentukan suatu elemen ditampilkan atau tidak pada browser.
+
+* id
+Menetapkan id pada elemen.
+
+* lang
+enentukan bahasa pada konten elemen.
+
+* spellcheck
+Menentukan elemen harus diperiksa ejaannya dan tata bahasanya atau tidak.
+
+* style
+Menentukan styling secara satu baris untuk suatu elemen.
+
+* tabindex
+Menentukan urutan dari suatu elemen.
+
+* title
+Menentukan informasi tambahan tentang suatu elemen.
+
+* translate
+Menentukan konten elemen harus diterjemahkan atau tidak.
+
+Itulah pembahasan mengenai anatomi elemen HTML. Elemen ini memiliki peran yang sangat besar terhadap browser agar informasi-informasi dapat ditampilkan dengan baik. Untuk menambah wawasan, ada artikel yang menyebutkan atribut-atribut yang dapat digunakan. Silakan kunjungi https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes

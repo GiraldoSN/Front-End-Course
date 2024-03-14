@@ -1,0 +1,8 @@
+Alur Latihan
+Berikut adalah alur latihan kali ini.
+
+Membuka hasil akhir dari latihan sebelumnya.
+Menuliskan struktur dasar dokumen HTML pada berkas index.html.
+Menempatkan seluruh konten pada elemen body.
+Membungkus setiap bagian dari artikel dengan elemen yang tepat.
+Menjalankan dokumen HTML pada browser.

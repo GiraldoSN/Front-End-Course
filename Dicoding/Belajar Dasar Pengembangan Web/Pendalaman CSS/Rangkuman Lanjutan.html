@@ -1,0 +1,329 @@
+<!-- Selector Dasar
+Berikut adalah berbagai selector dasar yang telah dipelajari.
+
+Type Selector
+Type Selector menggunakan nama elemen sebagai target untuk diterapkannya rule. Dalam kata lain, ketika menggunakan selector ini tentu rule akan diterapkan pada seluruh elemen target yang ada pada dokumen HTML.
+
+Class Selector
+Class selector menetapkan target elemen berdasarkan nilai dari atribut class yang diterapkan pada elemennya. Untuk penulisan selector-nya diawali dengan tanda titik (.) dan dilanjutkan dengan nama class-nya.
+
+ID Selector
+Class selector menetapkan target elemen berdasarkan nilai dari atribut id yang diterapkan pada elemennya. Untuk menetapkan selector dengan menggunakan id, kita gunakan tanda octothorpe (#) atau lebih familiar disebut dengan hash.
+
+Attribute Selector
+Attribute selector merupakan cara menetapkan target elemen berdasarkan sebuah atribut yang digunakan atau bahkan bisa lebih spesifik dengan nilainya.
+
+Universal Selector
+Universal selector digunakan untuk diterapkan pada seluruh elemen. Namun, selector ini juga bisa secara spesifik menargetkan sebuah elemen dengan menggabungkannya bersama selector yang lain. -->
+
+<!-- Combinators
+Berikut adalah berbagai combinator yang telah dipelajari. -->
+
+<p>
+    Adjacent Sibling Selector (+)
+    Adjacent Sibling Selector menggabungkan dua buah basic selector dengan menggunakan tanda + di antara keduanya.
+    Contohnya berikut.
+</p>
+
+img + p {
+color: green;
+}
+<br>
+<h5>General Sibling Selector (~)</h5>
+<p>
+    Mirip seperti Adjacent Sibling Selector, tetapi rules akan diterapkan pada seluruh elemen kedua yang berada setelah
+    elemen pertama selama masih memiliki induk yang sama,
+    walaupun posisi dari elemen kedua tidak berada tepat setelahnya.
+    General Sibling Selector menggunakan simbol tilda (~) untuk menetapkan elemennya.
+    Biasanya karakter ini berada di tombol kibor sebelah kiri tombol angka “1”.
+</p>
+<br>
+<h5>Child Selector (>)</h5>
+<p>Child Selector menggabungkan dua buah basic selector dengan menggunakan tanda greater than (>) di antara basic
+    selectornya. Contohnya sebagai berikut.</p>
+<p>
+    iv > p {
+    background-color: yellow;
+    }
+
+    Sebagaimana contoh di atas, CSS rule akan diterapkan pada seluruh elemen paragraf yang berada dalam elemen
+<div> secara langsung.
+    Dalam arti lain, elemen paragraf merupakan child dari elemen <div>, bukan hanya sebuah turunannya.
+        </p>
+        <br>
+        <h5>Pseudo Selector</h5>
+        <p>
+            Berikut adalah macam-macam pseudo selector yang telah dipelajari.
+
+            Pseudo-class Selector
+            Pseudo-class merupakan sebuah class “semu” yang sebenarnya ada pada tiap elemen HTML. Pada contoh
+            sebelumnya, kita sudah mengetahui salah satu pseudo-class selector. Dengan menggunakan selector ini kita
+            dapat memilih elemen berdasarkan class yang tidak tampak pada dokumen. Kita bisa menetapkan rule hanya
+            ketika sebuah tautan telah dikunjungi (:visited) atau ketika sebuah elemen diarahkan dengan kursor (:hover).
+
+            Untuk menggunakan pseudo-class, kita gunakan tanda titik dua (:) pada basic selector dan diikuti dengan
+            pseudo-class-nya.
+        </p>
+        <br>
+        <h5>Pseudo Selector</h5>
+        <p>Berikut adalah macam-macam pseudo selector yang telah dipelajari.</p>
+        <br>
+        <h6>Pseudo-class Selector</h6>
+        <p>
+            Pseudo-class merupakan sebuah class “semu” yang sebenarnya ada pada tiap elemen HTML. Pada contoh
+            sebelumnya, kita sudah mengetahui salah satu pseudo-class selector. Dengan menggunakan selector ini kita
+            dapat memilih elemen berdasarkan class yang tidak tampak pada dokumen. Kita bisa menetapkan rule hanya
+            ketika sebuah tautan telah dikunjungi (:visited) atau ketika sebuah elemen diarahkan dengan kursor (:hover).
+
+            Untuk menggunakan pseudo-class, kita gunakan tanda titik dua (:) pada basic selector dan diikuti dengan
+            pseudo-class-nya.
+        </p>
+        <br>
+        <h5>Pseudo-elemen Selector</h5>
+        Sama seperti pseudo-class, pseudo-element merupakan sebuah elemen “semu” yang sebenarnya ada, tetapi tidak
+        tampak secara tertulis pada berkas HTML. Selector ini biasa digunakan ketika kita ingin menambahkan konten tepat
+        sebelum dan setelah sebuah elemen paragraf. Yup, kita tidak perlu menuliskan elemen/konten baru pada berkas HTML
+        untuk menambahkan konten. Namun, kita dapat memanfaatkan pseudo-element untuk melakukannya. Pseudo-element yang
+        dimaksud adalah ::before dan ::after.
+        <br>
+        <h5>Font Styling</h5>
+        <p>
+
+        </p>
+        Ketika kita membuat sebuah dokumen teks, termasuk dokumen cetak, langkah awal yang kita lakukan biasanya
+        menentukan jenis font yang akan digunakan; pada pengembangan website pun demikian. Dalam CSS, font ditentukan
+        menggunakan beberapa paket properti font yang dapat mengatur tipe font, ukuran, ketebalan, dan style. Berikut
+        daftarnya.
+        <ul>
+            <li>font-family: menetapkan jenis font yang akan diterapkan pada target.</li>
+            <li>font-size: menentukan ukuran pada teks.</li>
+            <li>font-weight: menentukan ketebalan pada teks. </li>
+            <li>font-style: menetapkan styling yang diterapkan pada teks.</li>
+            <li>font-variant: menentukan teks untuk menggunakan gaya small caps (huruf kapital kecil).</li>
+            <li>font: sebagai shorthand dari properti font yang ada.</li>
+        </ul>
+        <br>
+        <h5>Text Styling</h5>
+        <p>Setelah mempelajari cara memanipulasi font, kita akan mempelajari cara melakukan formatting pada keseluruhan
+            teks yang ada pada baris paragraf,
+            seperti menetapkan indentasi, jarak antar baris, kata dan huruf, dan sebagainya. Berikut daftar dan
+            penjelasannya.
+        </p>
+        <ul>
+            <li>Line-height: mengatur jarak minimal dari garis dasar ke garis dasar dalam menampilkannya teks pada
+                halaman.</li>
+            <li>Text-indent: memberikan jarak/lekuk di awal paragraf.</li>
+            <li>Text-align: mengatur perataan pada teks.</li>
+            <li>Text-decoration: menetapkan dekorasi seperti underline (garis bawah), strikethrough (teks dicoret), dan
+                overline (garis atas).</li>
+            <li>Text-transform: mengubah kapitalisasi tanpa harus menuliskan kembali teksnya.</li>
+            <li>Word and Letter Spacing: mengatur spasi atau jarak pada kata dan huruf.</li>
+            <li>Text-shadow: membuat bayangan pada teks.</li>
+        </ul>
+        <br>
+        <h5>Menetapkan Nilai Warna</h5>
+        <p> Pada CSS, kita dapat menggunakan numeric value dan predefined color name untuk menetapkan nilai warna.
+
+            Numeric Value
+            Penetapan warna menggunakan numeric value adalah cara yang paling banyak digunakan karena dengan
+            menggunakannya, kita dapat menentukan warna yang diinginkan dengan tepat. Terlebih dengan bantuan color
+            picker, kita tidak perlu repot-repot memahami dan mencari nilai kode warna secara manual.
+
+            Berikut adalah contoh penulisan nilai warna pada CSS dengan numeric value.
+
+
+            /* Warna hijau menggunakan format RGB */
+            color: rgb(78,231,23);
+
+            /* Warna hijau Menggunakan format HEX */
+            color: #4ee717;
+
+            /* Warna hijau menggunakan format HSL (hanya di CSS3)*/
+            color: hsl(104, 82%, 50%);
+        </p>
+        <br>
+        <h5>Predefined Color Name</h5>
+        <p>Selain menggunakan format angka, menentukan warna juga dapat menggunakan sebuah kata, seperti blue, yellow,
+            red dan lainnya
+            color: black;
+            color: white;
+            color: blue;
+            Dengan menggunakan kata tentu kita dapat lebih mudah dan cepat dalam menentukan warna, tetapi mungkin hanya
+            warna dasar yang dapat kita hafal.
+        </p>
+        <br>
+        <h3>Warna untuk Teks dan Latar Belakang</h3>
+
+        Kita sudah belajar dua cara menetapkan warna. Nah, kita perlu mengetahui obyek yang akan diwarnai untuk
+        mengimplementasikan ilmu tersebut, bukan? Ada dua hal yang biasa dilakukan, yaitu teks dan background.
+        <ul>
+            <li>Text Color</li>
+            <p>
+                Kita dapat dengan mudahnya mengganti warna teks menggunakan properti color. Nilai dari properti ini
+                dapat berupa
+                predefined color name atau numeric value dengan menggunakan RGB, RGBA, Hex, HSL, ataupun HSLA.
+                p { color: gray; }
+                p { color: #666666; }
+                p { color: #666; }
+                p { color: rgb(102,102,102); }
+            </p>
+            <li>Background Color</li>
+            <p>
+                CSS memperlakukan setiap elemen HTML seperti berada pada sebuah kotak dan properti background-colordapat
+                mengatur warna untuk background dari kotak tersebut.
+
+                .box {
+                background-color: salmon;
+                }
+            </p>
+        </ul>
+        <br>
+        <h5>Opacity</h5>
+        <p>
+            Opacity adalah seberapa besar tingkat terlihat suatu objek. Semakin besar tingkat transparansi suatu objek,
+            semakin tak terlihat objek tersebut. Namun, makin besar tingkat opacity suatu objek maka makin terlihat
+            objek tersebut (solid).
+
+            p {
+            background-color: red;
+            }
+
+            p.opacity-50 {
+            opacity: 50%;
+            }
+
+            p.opacity-100 {
+            opacity: 100%;
+            }
+        </p>
+        <br>
+        <h5>Box Model</h5>
+        <p>Setiap elemen yang dibuat pada HTML akan menciptakan sebuah kotak untuk menampung kontennya. Layaknya bentuk
+            kotak pada umumnya, ada beberapa nilai atau komponen padanya.
+            Pada CSS, kita dapat mengatur nilai-nilai tersebut. Inilah yang disebut dengan box model.
+        </p>
+
+        <ul>
+            <li>Lebar dan tinggi pada kotak (konten).</li>
+            <li>Ruang kosong antara konten dengan border (padding).</li>
+            <li>Garis tepi (border).</li>
+            <li>Jarak dari elemen lain (margin).</li>
+        </ul>
+        <br>
+        <h5>Box Element</h5>
+        <p>
+            pada gambar di atas, setiap elemen pada HTML, baik block-level maupun inline-level, akan menghasilkan kotak
+            elemen.
+
+            Berikut adalah penjelasan dari gambar di atas.
+        </p>
+        <ul>
+            <li>Content: konten dari elemen itu sendiri.</li>
+            <li>Padding: area yang menjadi jarak antara border elemen dengan konten yang ditampilkan.</li>
+            <li>Border: garis yang mencakup konten beserta padding.</li>
+            <li>Margin: area jarak di luar border.</li>
+            <li>Edge of Element: batas dari suatu elemen.</li>
+        </ul>
+        <br>
+        <h3>Box Model</h3>
+        <p>Berikut adalah rangkuman materi yang telah dipelajari mengenai box model.
+        </p>
+        <h5>Dimension</h5>
+        <p>
+            Secara standar, sebuah box yang dihasilkan tiap elemen selalu cukup untuk menampung konten. Namun, kita
+            dapat
+            mengatur nilai dimensi dari box tersebut dengan properti width dan height.
+
+            .box {
+            height: 300px;
+            width: 300px;
+            }
+        </p>
+        <br>
+        <h5>Limiting Dimension</h5>
+        <p> Beberapa website yang ada sekarang menampilkan layout yang dapat melebar dan menyempit mengikuti ukuran
+            layar
+            pengguna. Pada prinsip tampilan tersebut, mungkin kita memerlukan sebuah limitasi ukuran yang harus
+            ditetapkan
+            agar konten selalu ditampilkan secara proporsional. Untuk melakukannya, kita manfaatkan properti min-width
+            dan
+            max-width.
+        <ul></ul>
+        <li>min-width: menetapkan nilai lebar minimal yang harus dimiliki elemen.</li>
+        <li>max-width: menetapkan nilai lebar maksimal yang harus dimiliki elemen.</li>
+        .content {
+        max-width: 800px;
+        height: 400px;
+        }
+        </p>
+        <br>
+        <h5>Overflowing Content</h5>
+        <p>
+            Dimensi box yang dihasilkan elemen selalu cukup untuk menampung konten tetapi hal ini tidak berlaku jika
+            kita
+            tetapkan secara manual panjang dan lebarnya. Tak jarang terjadi overflow ketika kita menerapkan ukuran pada
+            elemen tetapi konten di dalamnya begitu banyak.
+        </p>
+        <br>
+        <h5>Box-sizing</h5>
+        <p>Sebelum CSS3, ukuran lebar dan panjang elemen mengacu pada konten elemen (content-box). Itu berarti ukuran
+            elemen seluruhnya merupakan nilai panjang (width) dan lebar (height) yang kita spesifikasikan ditambah
+            dengan
+            nilai padding dan border yang diterapkan pada elemen.
+
+            Dengan menggunakan properti box-sizing, kita dapat menentukannya berdasarkan border box, di mana ukuran
+            elemen
+            sudah termasuk content, padding dan border. Dengan metode ini, hasil elemen yang ditampilkan (termasuk
+            padding
+            dan border) akan memiliki dimensi yang sama persis seperti yang kita tentukan.
+
+            .content {
+            box-sizing: content-box;
+            }
+
+            .box {
+            box-sizing: border-box;
+            }
+        </p>
+        <br>
+        <h5>Border</h5>
+        <p>
+            Border merupakan sebuah garis yang mengelilingi area konten dan padding (opsional). Kita bisa mengatur tipe,
+            ketebalan, serta warna garis yang ditampilkan sesuai dengan yang kita inginkan. Kita juga bisa mengatur
+            dalam menampilkan sebagian atau keseluruhan garis pada elemen.
+
+            .box {
+            border: 4px dashed #00a2c6;
+            }
+        </p>
+        <br>
+        <h5>Padding</h5>
+        <p>
+            Padding merupakan jarak antara area konten dan border. Padding banyak diterapkan pada elemen jika elemen
+            tersebut menerapkan warna latar atau pun border. Padding memberikan sedikit ruang sehingga konten di dalam
+            elemen dapat lebih nyaman untuk ditampilkan.
+
+            p.example {
+            padding: 10px;
+            }
+        </p>
+        <br>
+        <h5>Margin</h5>
+        <p>
+            Margin merupakan ruang atau jarak pada sebuah elemen. Namun, jarak tersebut terletak diluar dari konten dan
+            border element. Margin digunakan untuk menjaga elemen agar tidak bertabrakan satu sama lain atau dari tepi
+            jendela browser.
+
+            margin: 10px 15px 20px 25px;
+        </p>
+        <br>
+        <h5>Display Roles</h5>
+        <p>
+            Standarnya, setiap elemen HTML memiliki dua tipe, yaitu block dan inline.
+            Keterangan;
+
+            Inline Element:
+            1. Elemen HTML yang secara default tidak menambahkan baris baru ketika dibuat.
+            2. Nilai lebar dan tinggi elemen inline sebesar konten di dalamnya, dan tidak dapat diubah.
+            3. Margin dan padding hanya mempengaruhi elemen secara horizontal, tidak vertikal.
+        </p>
